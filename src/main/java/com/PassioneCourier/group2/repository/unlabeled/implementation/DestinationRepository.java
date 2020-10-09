@@ -13,6 +13,15 @@ public class DestinationRepository implements DestinationRepositoryInterface {
         this.destinationsDB = new HashSet<>();
     }
 
+    private static DestinationRepositoryInterface destinationRepository = null;
+
+    public static DestinationRepository getDestinationRepository() {
+        if (destinationRepository == null) {
+            destinationRepository = new DestinationRepository();
+        }
+        return new DestinationRepository();
+    }
+
 
     @Override
     public Set<Destination> getAll() {

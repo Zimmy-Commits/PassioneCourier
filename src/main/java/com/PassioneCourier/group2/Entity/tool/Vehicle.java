@@ -19,6 +19,7 @@ public class Vehicle {
         this.plate = builder.plate;
     }
 
+
     public String getType() {
         return type;
     }

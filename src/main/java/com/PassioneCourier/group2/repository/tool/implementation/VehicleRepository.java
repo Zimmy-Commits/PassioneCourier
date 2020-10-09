@@ -12,6 +12,7 @@ public class VehicleRepository implements VehicleRepositoryInterface {
     private VehicleRepository() {this.vehicleDB = new HashSet<>();
     }
 
+
     public static VehicleRepository getVehicleRepositoryInter(){
         if(vehicleRepositoryInter == null){
             vehicleRepositoryInter = new VehicleRepository();
