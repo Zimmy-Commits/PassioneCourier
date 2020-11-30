@@ -13,7 +13,6 @@ public class DestinationRepository implements DestinationRepositoryInterface {
         this.destinationsDB = new HashSet<>();
     }
 
-
     @Override
     public Set<Destination> getAll() {
         return this.destinationsDB;
@@ -26,7 +25,13 @@ public class DestinationRepository implements DestinationRepositoryInterface {
     }
 
     @Override
+    public Destination read(Integer myID) {
+        return null;
+    }
+
+    @Override
     public Destination read(String myID) {
+
         Destination destinationRepository = null;
         for (Destination d : this.destinationsDB){
             destinationRepository = d;

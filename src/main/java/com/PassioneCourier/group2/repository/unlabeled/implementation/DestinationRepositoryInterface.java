@@ -5,6 +5,8 @@ import com.PassioneCourier.group2.repository.IRepository;
 
 import java.util.Set;
 
-public interface DestinationRepositoryInterface extends IRepository<Destination, String> {
+public interface DestinationRepositoryInterface extends IRepository<Destination, Integer> {
     Set<Destination> getAll();
+
+    Destination read(String myID);
 }
